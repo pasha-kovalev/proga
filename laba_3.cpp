@@ -65,7 +65,7 @@ char Stack::pullFromStack()
 {
 		if (top == 0)
 		{
-				return '0';
+				return 0;
 		}
 		--top;
 		return symbols[top];
@@ -93,6 +93,9 @@ bool Stack::checkBrackets(string& str)
 						}
 			
 		}
-		if (pullFromStack() == '0') return true;
+		if (!pullFromStack()) 
+		{
+			return true;
+		}
 		return false;
 }
