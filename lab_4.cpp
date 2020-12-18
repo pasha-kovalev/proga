@@ -104,7 +104,6 @@ Stack<T>::~Stack()
 		 }
 		 catch (const char* exception) {
 				 cerr << exception << endl;
-				 return;
 		 }
 		
 }
@@ -123,7 +122,6 @@ Stack<T>::~Stack()
 		 }
 		 catch (const char* exception) {
 				 cerr << exception << endl;
-				 return 0;
 		 }
 		
 }
