@@ -74,7 +74,7 @@ Stack<T>::Stack()
 		{
 				ptr = new T[20];
 				top = 0;
-				cout << "very nice. yout damn perfect stack has been created here." << endl << endl;
+				cout << "very nice. your damn perfect stack has been created here." << endl << endl;
 		}
 		catch (std::bad_alloc & ba)
 		{
