@@ -11,7 +11,7 @@ class Stack {
 public:
 		Stack();
 		~Stack();
-		void pushToStack(T);
+		void pushToStack(const T&);
 		T pullFromStack();
 		int getTopF() const;
 		void printF() const;
@@ -91,7 +91,7 @@ Stack<T>::~Stack()
 }
 
  template <typename T> 
- void Stack<T>::pushToStack(T val)
+ void Stack<T>::pushToStack(const T& val)
 {
 		
 		 try
